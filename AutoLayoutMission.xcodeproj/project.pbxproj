@@ -7,21 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD458E862B7F872A00328623 /* UIViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD458E852B7F872A00328623 /* UIViewCell.swift */; };
 		CD4D05012B7E271000862CC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D05002B7E271000862CC8 /* AppDelegate.swift */; };
 		CD4D05032B7E271000862CC8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D05022B7E271000862CC8 /* SceneDelegate.swift */; };
-		CD4D05052B7E271000862CC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D05042B7E271000862CC8 /* ViewController.swift */; };
+		CD4D05052B7E271000862CC8 /* MissionViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D05042B7E271000862CC8 /* MissionViewControllerViewController.swift */; };
 		CD4D05082B7E271000862CC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4D05062B7E271000862CC8 /* Main.storyboard */; };
 		CD4D050A2B7E271100862CC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4D05092B7E271100862CC8 /* Assets.xcassets */; };
 		CD4D050D2B7E271100862CC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4D050B2B7E271100862CC8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CD458E852B7F872A00328623 /* UIViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewCell.swift; sourceTree = "<group>"; };
 		CD4D04FD2B7E271000862CC8 /* AutoLayoutMission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutMission.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4D05002B7E271000862CC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD4D05022B7E271000862CC8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD4D05042B7E271000862CC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD4D05042B7E271000862CC8 /* MissionViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionViewControllerViewController.swift; sourceTree = "<group>"; };
 		CD4D05072B7E271000862CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD4D05092B7E271100862CC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD4D050C2B7E271100862CC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,12 +58,11 @@
 			children = (
 				CD4D05002B7E271000862CC8 /* AppDelegate.swift */,
 				CD4D05022B7E271000862CC8 /* SceneDelegate.swift */,
-				CD4D05042B7E271000862CC8 /* ViewController.swift */,
+				CD4D05042B7E271000862CC8 /* MissionViewControllerViewController.swift */,
 				CD4D05062B7E271000862CC8 /* Main.storyboard */,
 				CD4D05092B7E271100862CC8 /* Assets.xcassets */,
 				CD4D050B2B7E271100862CC8 /* LaunchScreen.storyboard */,
 				CD4D050E2B7E271100862CC8 /* Info.plist */,
-				CD458E852B7F872A00328623 /* UIViewCell.swift */,
 			);
 			path = AutoLayoutMission;
 			sourceTree = "<group>";
@@ -141,8 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD458E862B7F872A00328623 /* UIViewCell.swift in Sources */,
-				CD4D05052B7E271000862CC8 /* ViewController.swift in Sources */,
+				CD4D05052B7E271000862CC8 /* MissionViewControllerViewController.swift in Sources */,
 				CD4D05012B7E271000862CC8 /* AppDelegate.swift in Sources */,
 				CD4D05032B7E271000862CC8 /* SceneDelegate.swift in Sources */,
 			);
