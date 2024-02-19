@@ -9,13 +9,13 @@ import UIKit
 
 class MissionViewController: UIViewController {
 
-    @IBOutlet weak var WrapView: UIView!
+    @IBOutlet weak var secondView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-//        WrapView.layer.cornerRadius = 10
+        secondView.layer.cornerRadius = 20
     }
 }
 
