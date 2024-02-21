@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,82 +13,47 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayoutMission2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3E-ja-R4h">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYy-hl-lek" userLabel="content">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SvV-Of-Mh5" userLabel="headerContent">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="151.5"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4YZ-z0-6Aj">
-                                                <rect key="frame" x="0.0" y="101" width="320" height="95"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ByZ-Ig-D3L">
-                                                        <rect key="frame" x="20" y="37.5" width="80" height="20.5"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="80" id="Gx1-s5-YWD"/>
-                                                        </constraints>
-                                                        <mutableString key="text">각급 선거관리위원회는 선거인명부의 작성등 선거사무와 국민투표사무에 관하여 관계 행정기관에 필요한 지시를 할 수 있다. 법률이 정하는 주요방위산업체에 종사하는 근로자의 단체행동권은 법률이 정하는 바에 의하여 이를 제한하거나 인정하지 아니할 수 있다.
-
-모든 국민은 주거의 자유를 침해받지 아니한다. 주거에 대한 압수나 수색을 할 때에는 검사의 신청에 의하여 법관이 발부한 영장을 제시하여야 한다. 대법원장과 대법관이 아닌 법관은 대법관회의의 동의를 얻어 대법원장이 임명한다.
-
-모든 국민은 직업선택의 자유를 가진다. 국회는 국정을 감사하거나 특정한 국정사안에 대하여 조사할 수 있으며, 이에 필요한 서류의 제출 또는 증인의 출석과 증언이나 의견의 진술을 요구할 수 있다.
-
-국무회의는 정부의 권한에 속하는 중요한 정책을 심의한다. 모든 국민의 재산권은 보장된다. 그 내용과 한계는 법률로 정한다. 타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다.
-
-누구든지 병역의무의 이행으로 인하여 불이익한 처우를 받지 아니한다. 모든 국민은 능력에 따라 균등하게 교육을 받을 권리를 가진다. 국무총리는 대통령을 보좌하며, 행정에 관하여 대통령의 명을 받아 행정각부를 통할한다.
-
-국무위원은 국무총리의 제청으로 대통령이 임명한다. 모든 국민은 신체의 자유를 가진다. 누구든지 법률에 의하지 아니하고는 체포·구속·압수·수색 또는 심문을 받지 아니하며, 법률과 적법한 절차에 의하지 아니하고는 처벌·보안처분 또는 강제노역을 받지 아니한다.
-
-연소자의 근로는 특별한 보호를 받는다. 국가는 과학기술의 혁신과 정보 및 인력의 개발을 통하여 국민경제의 발전에 노력하여야 한다. 국회의원은 국회에서 직무상 행한 발언과 표결에 관하여 국회외에서 책임을 지지 아니한다.
-
-중앙선거관리위원회는 대통령이 임명하는 3인, 국회에서 선출하는 3인과 대법원장이 지명하는 3인의 위원으로 구성한다. 위원장은 위원중에서 호선한다.
-
-국회의원의 선거구와 비례대표제 기타 선거에 관한 사항은 법률로 정한다. 예비비는 총액으로 국회의 의결을 얻어야 한다. 예비비의 지출은 차기국회의 승인을 얻어야 한다.
-
-탄핵소추의 의결을 받은 자는 탄핵심판이 있을 때까지 그 권한행사가 정지된다. 모든 국민은 언론·출판의 자유와 집회·결사의 자유를 가진다. 감사위원은 원장의 제청으로 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다.</mutableString>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2d-qb-shB">
-                                                        <rect key="frame" x="112.5" y="37" width="80" height="21.5"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="JbD-p4-1nc"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="imZ-hi-FNW">
-                                                        <rect key="frame" x="237" y="22.5" width="50" height="50"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="6eV-as-5Vc"/>
-                                                            <constraint firstAttribute="width" constant="50" id="eJY-Ft-UKD"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
-                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="금연 아일랜드 라운지에서 자유롭게 이야기하세요" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtj-W4-aOq">
+                                                <rect key="frame" x="20" y="40" width="175" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <mutableString key="userLabel">공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.  국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을 도모함으로써 농·어민의 이익을 보호한다. 국가유공자·상이군경 및 전몰군경의 유가족은 법률이 정하는 바에 의하여 우선적으로 근로의 기회를 부여받는다.  헌법재판소의 장은 국회의 동의를 얻어 재판관중에서 대통령이 임명한다. 국가의 세입·세출의 결산, 국가 및 법률이 정한 단체의 회계검사와 행정기관 및 공무원의 직무에 관한 감찰을 하기 위하여 대통령 소속하에 감사원을 둔다.  대통령이 궐위되거나 사고로 인하여 직무를 수행할 수 없을 때에는 국무총리, 법률이 정한 국무위원의 순서로 그 권한을 대행한다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다.  대통령은 헌법과 법률이 정하는 바에 의하여 국군을 통수한다. 대법원과 각급법원의 조직은 법률로 정한다. 모든 국민은 인간다운 생활을 할 권리를 가진다.  재산권의 행사는 공공복리에 적합하도록 하여야 한다. 국회는 선전포고, 국군의 외국에의 파견 또는 외국군대의 대한민국 영역안에서의 주류에 대한 동의권을 가진다.  재판의 심리와 판결은 공개한다. 다만, 심리는 국가의 안전보장 또는 안녕질서를 방해하거나 선량한 풍속을 해할 염려가 있을 때에는 법원의 결정으로 공개하지 아니할 수 있다.  국군의 조직과 편성은 법률로 정한다. 대법관은 대법원장의 제청으로 국회의 동의를 얻어 대통령이 임명한다. 국방상 또는 국민경제상 긴절한 필요로 인하여 법률이 정하는 경우를 제외하고는, 사영기업을 국유 또는 공유로 이전하거나 그 경영을 통제 또는 관리할 수 없다.</mutableString>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일간 HOT 모아보기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNO-b6-I9L">
+                                                <rect key="frame" x="20" y="101" width="132" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="4YZ-z0-6Aj" firstAttribute="leading" secondItem="aYy-hl-lek" secondAttribute="leading" id="BqP-nJ-ZP6"/>
-                                            <constraint firstAttribute="trailing" secondItem="4YZ-z0-6Aj" secondAttribute="trailing" id="SjU-Gx-n3v"/>
-                                            <constraint firstAttribute="bottom" secondItem="4YZ-z0-6Aj" secondAttribute="bottom" constant="352" id="WpN-5S-eA0"/>
-                                            <constraint firstItem="4YZ-z0-6Aj" firstAttribute="top" secondItem="aYy-hl-lek" secondAttribute="top" constant="101" id="wXZ-N9-0SS"/>
+                                            <constraint firstItem="vNO-b6-I9L" firstAttribute="top" secondItem="rtj-W4-aOq" secondAttribute="bottom" constant="20" id="0ya-2D-gHK"/>
+                                            <constraint firstItem="rtj-W4-aOq" firstAttribute="leading" secondItem="SvV-Of-Mh5" secondAttribute="leading" constant="20" id="ApG-g7-FQy"/>
+                                            <constraint firstItem="vNO-b6-I9L" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SvV-Of-Mh5" secondAttribute="leading" constant="20" symbolic="YES" id="Bpd-M0-FQk"/>
+                                            <constraint firstAttribute="bottom" secondItem="vNO-b6-I9L" secondAttribute="bottom" constant="30" id="GUF-Te-cG4"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rtj-W4-aOq" secondAttribute="trailing" constant="50" id="Jvs-BZ-JML"/>
+                                            <constraint firstItem="rtj-W4-aOq" firstAttribute="top" secondItem="SvV-Of-Mh5" secondAttribute="top" constant="40" id="pnv-RV-ayK"/>
+                                            <constraint firstAttribute="trailing" secondItem="vNO-b6-I9L" secondAttribute="trailing" constant="223" id="sM8-Xm-Bti"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="aYy-hl-lek" firstAttribute="trailing" secondItem="omP-Eg-cqW" secondAttribute="trailing" id="BBw-Dt-Hft"/>
-                                    <constraint firstItem="aYy-hl-lek" firstAttribute="bottom" secondItem="omP-Eg-cqW" secondAttribute="bottom" id="BZD-g2-o7O"/>
-                                    <constraint firstItem="aYy-hl-lek" firstAttribute="top" secondItem="omP-Eg-cqW" secondAttribute="top" id="Dgf-Iu-4L6"/>
-                                    <constraint firstItem="aYy-hl-lek" firstAttribute="width" secondItem="fLQ-37-DRb" secondAttribute="width" id="RX8-JN-LXQ"/>
-                                    <constraint firstItem="aYy-hl-lek" firstAttribute="leading" secondItem="omP-Eg-cqW" secondAttribute="leading" id="byz-He-acB"/>
-                                    <constraint firstItem="aYy-hl-lek" firstAttribute="bottom" secondItem="fLQ-37-DRb" secondAttribute="bottom" id="dfU-Q5-ZzP"/>
+                                    <constraint firstItem="SvV-Of-Mh5" firstAttribute="top" secondItem="omP-Eg-cqW" secondAttribute="top" id="Cmj-u9-c0q"/>
+                                    <constraint firstItem="SvV-Of-Mh5" firstAttribute="trailing" secondItem="omP-Eg-cqW" secondAttribute="trailing" id="Dpy-Kv-274"/>
+                                    <constraint firstItem="SvV-Of-Mh5" firstAttribute="bottom" secondItem="omP-Eg-cqW" secondAttribute="bottom" id="FPI-Be-Vga"/>
+                                    <constraint firstItem="SvV-Of-Mh5" firstAttribute="width" secondItem="fLQ-37-DRb" secondAttribute="width" id="a0V-IA-HRR"/>
+                                    <constraint firstItem="SvV-Of-Mh5" firstAttribute="leading" secondItem="omP-Eg-cqW" secondAttribute="leading" id="rTA-HF-YWw"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="omP-Eg-cqW"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="fLQ-37-DRb"/>
@@ -106,12 +71,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="3.1690140845070425"/>
+            <point key="canvasLocation" x="133.59999999999999" y="3.1484257871064472"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
