@@ -49,59 +49,11 @@
                                                     <constraint firstItem="fFJ-Dm-79C" firstAttribute="leading" secondItem="6dC-jp-goR" secondAttribute="leading" id="y8i-Np-HPi"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egg-Hb-70H" userLabel="secondContent">
-                                                <rect key="frame" x="0.0" y="160.5" width="320" height="521.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="최근 7일간금연 아일랜드 라운지에서 자유롭게 이야기하세요금연 아일랜드 라운지에서 자유롭게 이야기하세요금연 아일랜드 라운지에서 자유롭게 이야기하세요금연 아일랜드 라운지에서 자유롭게 이야기하세요" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESC-WY-dwS">
-                                                        <rect key="frame" x="20" y="9.5" width="72.5" height="502.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최신순" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpW-MG-TEv">
-                                                        <rect key="frame" x="116" y="250.5" width="44.5" height="20.5"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44.5" id="OKM-YZ-LvF"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="slider.horizontal.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8Rw-RL-XHr">
-                                                        <rect key="frame" x="279" y="252.5" width="21" height="16"/>
-                                                    </imageView>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                                <constraints>
-                                                    <constraint firstItem="8Rw-RL-XHr" firstAttribute="leading" secondItem="gpW-MG-TEv" secondAttribute="trailing" constant="118.5" id="8Kh-MV-xt5"/>
-                                                    <constraint firstItem="8Rw-RL-XHr" firstAttribute="baseline" secondItem="gpW-MG-TEv" secondAttribute="firstBaseline" id="CnH-Bb-3FC"/>
-                                                    <constraint firstItem="8Rw-RL-XHr" firstAttribute="centerY" secondItem="Egg-Hb-70H" secondAttribute="centerY" id="Er7-WW-jHZ"/>
-                                                    <constraint firstItem="ESC-WY-dwS" firstAttribute="top" secondItem="Egg-Hb-70H" secondAttribute="top" constant="9.5" id="Ssa-e0-oJU"/>
-                                                    <constraint firstItem="gpW-MG-TEv" firstAttribute="centerY" secondItem="Egg-Hb-70H" secondAttribute="centerY" id="Vdq-e8-qtJ"/>
-                                                    <constraint firstItem="ESC-WY-dwS" firstAttribute="leading" secondItem="Egg-Hb-70H" secondAttribute="leading" constant="20" id="dih-T6-EZV"/>
-                                                    <constraint firstItem="gpW-MG-TEv" firstAttribute="leading" secondItem="ESC-WY-dwS" secondAttribute="trailing" constant="23.5" id="ehh-iL-lnR"/>
-                                                    <constraint firstItem="ESC-WY-dwS" firstAttribute="centerY" secondItem="Egg-Hb-70H" secondAttribute="centerY" id="gC8-bd-wBx"/>
-                                                    <constraint firstItem="gpW-MG-TEv" firstAttribute="baseline" secondItem="8Rw-RL-XHr" secondAttribute="baseline" id="mJJ-Ge-dfL"/>
-                                                    <constraint firstAttribute="trailing" secondItem="8Rw-RL-XHr" secondAttribute="trailing" constant="20" id="z7D-zB-vXg"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7t8-9Z-JsH" userLabel="thirdContent">
-                                                <rect key="frame" x="0.0" y="682" width="320" height="0.0"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="7t8-9Z-JsH" secondAttribute="trailing" id="0ec-cy-2Oe"/>
-                                            <constraint firstItem="7t8-9Z-JsH" firstAttribute="leading" secondItem="wra-qU-EaN" secondAttribute="leading" id="1ZU-Z3-05P"/>
-                                            <constraint firstAttribute="bottom" secondItem="7t8-9Z-JsH" secondAttribute="bottom" constant="518" id="1ng-mA-YN7"/>
-                                            <constraint firstAttribute="trailing" secondItem="Egg-Hb-70H" secondAttribute="trailing" id="7al-ZT-Nr9"/>
                                             <constraint firstAttribute="trailing" secondItem="RSB-8a-GJe" secondAttribute="trailing" id="T6N-Oi-w1p"/>
                                             <constraint firstAttribute="height" constant="1200" id="k1w-v4-7Hu"/>
-                                            <constraint firstItem="Egg-Hb-70H" firstAttribute="top" secondItem="wra-qU-EaN" secondAttribute="top" constant="160.5" id="lHb-ng-ryE"/>
-                                            <constraint firstItem="Egg-Hb-70H" firstAttribute="top" secondItem="RSB-8a-GJe" secondAttribute="bottom" id="mT8-bd-NFj"/>
-                                            <constraint firstItem="Egg-Hb-70H" firstAttribute="leading" secondItem="wra-qU-EaN" secondAttribute="leading" id="p72-nG-HbK"/>
-                                            <constraint firstItem="7t8-9Z-JsH" firstAttribute="top" secondItem="Egg-Hb-70H" secondAttribute="bottom" id="u42-S0-Bve"/>
                                             <constraint firstItem="RSB-8a-GJe" firstAttribute="top" secondItem="wra-qU-EaN" secondAttribute="top" id="uzg-zf-FVa"/>
                                             <constraint firstItem="RSB-8a-GJe" firstAttribute="leading" secondItem="wra-qU-EaN" secondAttribute="leading" id="xVZ-bK-ac3"/>
                                         </constraints>
@@ -135,12 +87,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="slider.horizontal.3" catalog="system" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
