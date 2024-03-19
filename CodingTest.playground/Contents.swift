@@ -22,9 +22,71 @@ func solution1(_ numbers:[Int]) -> String {
 
 // MARK: - H-Index - https://school.programmers.co.kr/learn/courses/30/lessons/42747#fn1
 func solution2(_ citations:[Int]) -> Int {
-    var copiedCitations = citations
-    var paperCount = copiedCitations.count
-    return 0
+    var answer = -1
+    // 문제에서 인용 횟수가 논문의 수보다 작거나 같아지는 값 -> H-Index
+    // 1. 배열을 내림차순으로 정렬
+    var sortedCitations = citations.sorted(by: >)
+    
+    for(idx, citaion) in sortedCitations.enumerated() {
+        // 내림차순으로 정렬된 논문수를 반복하며 정답 조건 검색
+        if citaion >= idx + 1 {
+            answer = citaion
+        } else {
+            break
+        }
+    }
+    return answer
 }
 
-print(solution2([3, 0, 6, 1, 5]))
+// MARK: 해시 - 의상 - https://school.programmers.co.kr/learn/courses/30/lessons/42578?language=swift
+
+func solution3(_ clothes:[[String]]) -> Int {
+    /*
+    MARK: - 내가 작성한 정답
+    var clothDictionary: [String: [String]] = [:]
+    var keys: [String] = []
+    
+    for cloth in clothes {
+        if clothDictionary[cloth[1]] == nil {
+            clothDictionary[cloth[1]] = [cloth[0]]
+        } else {
+            clothDictionary[cloth[1]]?.append(cloth[0])
+        }
+        
+        if !keys.contains(cloth[1]) {
+            keys.append(cloth[1])
+        }
+    }
+    
+    var answer = 0
+    for key in keys {
+        if let keyCount = clothDictionary[key] {
+            answer += keyCount.count
+        }
+    }
+    if clothDictionary.count > 1 {
+        answer += clothDictionary.count
+    }
+    
+    return answer
+    MARK: - ERROR PROBLEM: 나는 단순히 조합의 수를 구해서 더했지만 모든 가능한 의상의 조합을 계산해야함
+    */
+    
+    // clothes의 종류별 의상 개수를 저장할 Dictionary
+    var clothDictionary: [String: Int] = [:]
+    
+    for cloth in clothes {
+        let clothType = cloth[1]
+        clothDictionary[clothType, default: 0] += 1
+    }
+    
+    var answer = 1
+    for count in clothDictionary.values {
+        answer *= (count + 1)
+    }
+    
+    // 모든 의상을 입지 않는 경우 제외..?
+    return answer - 1
+}
+
+print(solution3([["crow_mask", "face"], ["blue_sunglasses", "face"], ["smoky_makeup", "face"]])) // 5
