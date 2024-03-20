@@ -157,4 +157,50 @@ func solution5(_ s:String) -> Bool {
     return stack.isEmpty
 }
 
-print(solution5("()()")) // [2, 1]
+/*
+MARK: - 잘못된 풀이의 부산물...
+func recursiveSolution(stacks: [(Int, Int)], compareProperties: [(Int, Int)], count: Int) -> [(Int, Int)] {
+    var copiedCount = count
+    var copiedStacks = stacks
+    var restProps: [(Int, Int)] = []
+    
+    for tuple in compareProperties {
+        if let lastStack = copiedStacks.last {
+            if copiedCount == 0 {
+                if lastStack.1 < tuple.1 {
+                    copiedStacks.append(tuple)
+                } else {
+                    if lastStack.1 != tuple.1 {
+                        restProps.append(tuple)
+                    }
+                    continue
+                }
+            } else {
+                copiedStacks.append(tuple)
+            }
+        }
+    }
+    
+    if restProps.isEmpty {
+        return copiedStacks
+    } else {
+        return recursiveSolution(stacks: copiedStacks, compareProperties: restProps, count: copiedCount + 1)
+    }
+}
+*/
+
+// MARK: 스택/큐 - 프로세스 - https://school.programmers.co.kr/learn/courses/30/lessons/42587?language=swift
+func solution6(_ priorities:[Int], _ location:Int) -> Int {
+    /*
+    // MARK: - 나의 풀이
+    var priorityTuple: [(Int, Int)] = priorities.enumerated().map{ (index, priorty) in
+        return (priorty, index)
+    }.sorted{ $0.0 > $1.0 }
+
+    let result = recursiveSolution(stacks: [priorityTuple[0]], compareProperties: priorityTuple, count: 0)
+    return result.firstIndex(where: { $1 == location })! + 1
+    */
+    return 0
+}
+
+print(solution6([2, 1, 3, 2], 2)) // 1
