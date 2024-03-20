@@ -39,7 +39,6 @@ func solution2(_ citations:[Int]) -> Int {
 }
 
 // MARK: 해시 - 의상 - https://school.programmers.co.kr/learn/courses/30/lessons/42578?language=swift
-
 func solution3(_ clothes:[[String]]) -> Int {
     /*
     MARK: - 내가 작성한 정답
@@ -69,7 +68,7 @@ func solution3(_ clothes:[[String]]) -> Int {
     }
     
     return answer
-    MARK: - ERROR PROBLEM: 나는 단순히 조합의 수를 구해서 더했지만 모든 가능한 의상의 조합을 계산해야함
+    MARK: - 원인: 나는 단순히 조합의 수를 구해서 더했지만 모든 가능한 의상의 조합을 계산해야함
     */
     
     // clothes의 종류별 의상 개수를 저장할 Dictionary
@@ -89,4 +88,62 @@ func solution3(_ clothes:[[String]]) -> Int {
     return answer - 1
 }
 
-print(solution3([["crow_mask", "face"], ["blue_sunglasses", "face"], ["smoky_makeup", "face"]])) // 5
+// MARK: 스택/큐 - 기능개발 - https://school.programmers.co.kr/learn/courses/30/lessons/42586?language=swift
+func solution4(_ progresses:[Int], _ speeds:[Int]) -> [Int] {
+    var answer: [Int] = []
+    /*
+    MARK: - 내가 작성한 정답
+    var copiedProgresses = progresses
+    var count = 0
+    for (index, progress) in progresses.enumerated() {
+        var process = progress
+        
+        if copiedProgresses[index] >= 100 {
+            answer.append(count)
+            continue
+        }
+        while process < 100 {
+            process += speeds[index]
+            for i in index..<copiedProgresses.count {
+                copiedProgresses[i] = copiedProgresses[i] + speeds[i]
+            }
+            count += 1
+        }
+        answer.append(count)
+    }
+    
+    var uniqueAnswer = Array(Set(answer)).sorted()
+    return uniqueAnswer.map{ answer.lastIndex(of: $0)! - answer.firstIndex(of: $0)! + 1 }
+    MARK: - 원인: 배표되는 일 수를 계산할 때 제대로 처리되지 않음 -> 1. 중복되는 배포 일수를 처리하지 않음 2. uniqueAnswer에서 중복을 제거한 후 이전과 이후 배포 일수의 차이를 구하는데 오류가 있음
+    */
+    
+    var index = 0
+    while index < progresses.count {
+        var day = 0
+        // 현재 기능의 진행 상황이 100%가 되기 전까지 반복하여 '일수'를 증가시킴
+        while progresses[index] + day * speeds[index] < 100 {
+            day += 1
+        }
+        
+        // 현재 배포될 기능의 수
+        var deplyCount = 0
+        // 현재 기능이 완료되어 배포 가능여부 확인
+        while index < progresses.count, progresses[index] + day * speeds[index] >= 100 {
+            deplyCount += 1
+            // 현재 기능이 배포될 수 있을 때 다음 기능으로 넘어가기 위함
+            index += 1
+        }
+        answer.append(deplyCount)
+    }
+    return answer
+}
+
+// MARK: 스택/큐 - 올바른 괄호 - https://school.programmers.co.kr/learn/courses/30/lessons/12909?language=swift
+func solution5(_ s:String) -> Bool {
+    var answer: Bool = false
+    
+    
+    return answer
+}
+
+print(solution5("()()")) // [2, 1]
