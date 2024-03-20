@@ -1,7 +1,6 @@
 import Foundation
 
 // MARK: - 프로그래머스 문제 가장 큰 수 - https://school.programmers.co.kr/learn/courses/30/lessons/42746
-
 func solution1(_ numbers:[Int]) -> String {
     /*
         MARK: 내가 작성한 정답
@@ -140,10 +139,22 @@ func solution4(_ progresses:[Int], _ speeds:[Int]) -> [Int] {
 
 // MARK: 스택/큐 - 올바른 괄호 - https://school.programmers.co.kr/learn/courses/30/lessons/12909?language=swift
 func solution5(_ s:String) -> Bool {
-    var answer: Bool = false
+    var stack: [Character] = []
     
+    for str in s {
+        if str == "(" {
+            stack.append(str)
+        } else if str == ")" {
+            // stack이 empty일 경우 (가 없다 -> 올바른 괄호가 만들어 질 수 없다.
+            if stack.isEmpty {
+                return false
+            }
+            // str이 (일 때만 stack에 append하므로, stack의 마지막이 str이 )일 때 처음 만나므로 stack의 마지막을 지워준다.
+            stack.removeLast()
+        }
+    }
     
-    return answer
+    return stack.isEmpty
 }
 
 print(solution5("()()")) // [2, 1]
